@@ -164,7 +164,7 @@ function template_functions(){
 	$('[data-rel="chosen"],[rel="chosen"]').chosen();
 
 	/* ---------- Tabs ---------- */
-	$('#myTab a:first').tab('show');
+	$('#main_nav a:last').tab('show');
 	$('#main_nav a').click(function (e) {
 	  e.preventDefault();
 	  $(this).tab('show');
