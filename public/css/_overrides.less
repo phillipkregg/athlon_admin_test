@@ -1,5 +1,50 @@
 
 
+//************** LESS CSS Overrides ***********
+
+.btn {
+  margin-top: 10px;
+}
+
+.btn-primary {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #006dcc;
+  *background-color: #005096;
+  background-image: -moz-linear-gradient(top, #0088cc, #005096);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#005096));
+  background-image: -webkit-linear-gradient(top, #0088cc, #005096);
+  background-image: -o-linear-gradient(top, #0088cc, #005096);
+  background-image: linear-gradient(to bottom, #0088cc, #005096);
+  background-repeat: repeat-x;
+  border-color: #005096 #005096 #002a80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  color: #ffffff;
+  background-color: #005096;
+  *background-color: #003bb3;
+}
+
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #003399 \9;
+}
+
+
+
+
+
+
+//*************** Other Styles **************
+
 body {
   background: #fff;
   background-image: none;
@@ -82,6 +127,7 @@ body {
       .selected_wizard_tab {
         border-left: 10px solid #3BA0D2;
         margin-left: 0px;
+        color: #3BA0D2;
       }
 
 
@@ -257,41 +303,6 @@ body {
     }
 
 
-    .btn {
-      margin-top: 10px;
-    }
-
-    .btn-primary {
-      color: #ffffff;
-      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-      background-color: #006dcc;
-      *background-color: #005096;
-      background-image: -moz-linear-gradient(top, #0088cc, #005096);
-      background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#005096));
-      background-image: -webkit-linear-gradient(top, #0088cc, #005096);
-      background-image: -o-linear-gradient(top, #0088cc, #005096);
-      background-image: linear-gradient(to bottom, #0088cc, #005096);
-      background-repeat: repeat-x;
-      border-color: #005096 #005096 #002a80;
-      border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
-      filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-    }
-
-    .btn-primary:hover,
-    .btn-primary:active,
-    .btn-primary.active,
-    .btn-primary.disabled,
-    .btn-primary[disabled] {
-      color: #ffffff;
-      background-color: #005096;
-      *background-color: #003bb3;
-    }
-
-    .btn-primary:active,
-    .btn-primary.active {
-      background-color: #003399 \9;
-    }
 
 
 
@@ -337,6 +348,7 @@ body {
 
         span {
           text-decoration: line-through;
+
         }
 
       }
@@ -352,6 +364,70 @@ body {
 
 
 
+
+// ********* Game Header Section ***********
+
+
+#game_header {
+
+  #sample_header_image {
+
+    p {
+      font-style: italic;
+      color: #A1A4AC;
+    }
+
+
+  }
+
+
+  form {
+
+    margin-top: 50px;
+
+    label {
+      font-size: 18px;
+    }
+
+  }
+
+
+
+}
+
+
+
+//******** Email Header Section ***********
+
+#email_header {
+
+  p:nth-child(3) {
+    font-style: italic;
+  }
+
+  #sample_email_image {
+
+    p {
+      font-style: italic;
+      color: #A1A4AC;
+    }
+
+
+
+
+  }
+
+  form {
+
+    margin-top: 50px;
+
+    label {
+      font-size: 18px;
+    }
+
+  }
+
+}
 
 
 
