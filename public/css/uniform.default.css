@@ -23,7 +23,7 @@ div.uploader,
 div.uploader span.action,
 div.button,
 div.button span {
-  background-image: url(../img/sprite.png);
+  background: url(../img/athlon/file_upload_bg.png) center center;
   background-repeat: no-repeat;
   -webkit-font-smoothing: antialiased;
 }
@@ -276,27 +276,27 @@ div.radio.disabled.active span.checked {
 /* Uploader */
 
 div.uploader {
-  background-position: 0px -297px;
-  height: 28px;
+  /*background-position: 0px -297px;*/
+  height: 40px;
 }
 
 div.uploader span.action {
   background-position: right -409px;
-  height: 24px;
-  line-height: 24px;
+  height: 40px;
+  line-height: 40px;
 }
 
 div.uploader span.filename {
-  height: 24px;
+  height: 40px;
   /* change this line to adjust positioning of filename area */
   margin: 2px 0px 2px 2px;
-  line-height: 24px;
+  line-height: 40px;
 }
 
 div.uploader.focus,
 div.uploader.hover,
 div.uploader:hover {
-  background-position: 0px -353px;
+  /*background-position: 0px -353px;*/
 }
 
 div.uploader.focus span.action,
@@ -307,37 +307,37 @@ div.uploader:hover span.action {
 
 div.uploader.active span.action,
 div.uploader:active span.action {
-  background-position: right -465px;
+  /*background-position: right -465px;*/
 }
 
 div.uploader.focus.active span.action,
 div.uploader:focus.active span.action,
 div.uploader.focus:active span.action,
 div.uploader:focus:active span.action {
-  background-position: right -493px;
+  /*background-position: right -493px;*/
 }
 
 div.uploader.disabled {
-  background-position: 0px -325px;
+  /*background-position: 0px -325px;*/
 }
 
 div.uploader.disabled span.action {
-  background-position: right -381px;
+  /*background-position: right -381px;*/
 }
 
 div.button {
-  background-position: 0px -523px;
+  /*background-position: 0px -523px;*/
 }
 
 div.button span {
-  background-position: right -643px;
+  /*background-position: right -643px;*/
 }
 
 div.button.focus,
 div.button:focus,
 div.button:hover,
 div.button.hover {
-  background-position: 0px -553px;
+  /*background-position: 0px -553px;*/
 }
 
 div.button.focus span,
@@ -375,7 +375,7 @@ div.button:disabled span {
 /* Button */
 
 div.button {
-  height: 30px;
+  height: 40px;
 }
 
 div.button span {
@@ -431,12 +431,12 @@ div.radio {
 
 /* Uploader */
 div.uploader {
-  width: 190px;
+  width: 300px;
   cursor: pointer;
 }
 
 div.uploader span.action {
-  width: 85px;
+  width: 100px;
   text-align: center;
   text-shadow: #fff 0px 1px 0px;
   font-size: 11px;
@@ -444,14 +444,15 @@ div.uploader span.action {
 }
 
 div.uploader span.filename {
+  margin-top: 5px;
   color: #777;
-  width: 82px;
+  width: 171px;
   border-right: solid 1px #bbb;
   font-size: 11px;
 }
 
 div.uploader input {
-  width: 190px;
+  width: 300px;
 }
 
 div.uploader.disabled span.action {
@@ -603,7 +604,7 @@ div.uploader input {
   right: 0;
   bottom: 0;
   float: right;
-  height: 25px;
+  height: 40px;
   border: none;
   cursor: default;
 }

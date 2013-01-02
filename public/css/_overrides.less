@@ -1,5 +1,8 @@
 
 
+@import url(http://fonts.googleapis.com/css?family=Cabin);
+
+
 //************** LESS CSS Overrides ***********
 
 .btn {
@@ -39,16 +42,28 @@
 }
 
 
+// custom alert
+alert.blue_alert {
+  background-color: #3B9FD1 !important;
+  color: #fff !important;
+  border: 1px solid #3B9FD1 !important;
+}
 
-
+.alert.alert-info {
+  background-color: #3B9FD1 !important;
+  color: #fff !important;
+  border: 1px solid #3B9FD1 !important;
+}
 
 
 //*************** Other Styles **************
 
 body {
+  font-family: 'Cabin', sans-serif;
   background: #fff;
   background-image: none;
 }
+
 
 
 
@@ -60,7 +75,200 @@ body {
   margin-left: auto;
 }
 
+
+
+#athlon_header {
+
+
+
+
+  img {
+
+    margin-top: 2px;
+  }
+
+  #game_selector {
+    width: 300px;
+    padding: 5px;
+    margin-left: 100px;
+    float: left;
+    //margin-top: 5px;
+
+    img {
+
+    }
+
+    span {
+      padding: 5px;
+      margin-top: 2px;
+      display: inline-block;
+      font-size: 16px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      background: #696969;
+
+    }
+
+  }
+
+
+  #game_list {
+    display: none;
+    padding: 40px;
+
+
+    ul {
+
+      li {
+        list-style-type: none;
+        margin: 5px;
+        float: left;
+
+        a {
+          font-size: 20px;
+          display: inline-block;
+          padding:  5px 20px;
+
+          &:hover {
+            background: #708090;
+            color: white;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+
+
+  #login_container {
+
+    float: right;
+
+    .btn {
+      display: inline-block;
+      *display: inline;
+      padding: 4px 12px;
+      margin-bottom: 0;
+      *margin-left: .3em;
+      font-size: 10px;
+      font-weight: 100;
+      letter-spacing: 1px;
+      line-height: 20px;
+      color: #fff;
+      text-align: center;
+      text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #3F4551;
+      *background-color: #3F4551;
+      background-image: -moz-linear-gradient(top, #3F4551, #3F4551);
+      background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3F4551), to(#3F4551));
+      background-image: -webkit-linear-gradient(top, #3F4551, #3F4551);
+      background-image: -o-linear-gradient(top, #3F4551, #3F4551);
+      background-image: linear-gradient(to bottom, #3F4551, #3F4551);
+      background-repeat: repeat-x;
+      border: 1px solid #bbbbbb;
+      *border: 0;
+      border-color: #3F4551 #3F4551 #bfbfbf;
+      border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+      border-bottom-color: #a2a2a2;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff3F4551', endColorstr='#ff3F4551', GradientType=0);
+      filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+      *zoom: 1;
+      -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+      -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    }
+
+    .btn:hover,
+    .btn:active,
+    .btn.active,
+    .btn.disabled,
+    .btn[disabled] {
+      color: #333333;
+      background-color: #CDCDCD;
+      *background-color: #CDCDCD;
+    }
+
+    .btn:active,
+    .btn.active {
+      background-color: #3F4551 \9;
+    }
+
+    .btn:first-child {
+      *margin-left: 0;
+    }
+
+    .btn:hover {
+      color: #666;
+      text-decoration: none;
+      background: #EDEDED;
+
+//      background-position: 0 -15px;
+//      -webkit-transition: background-position 0.1s linear;
+//      -moz-transition: background-position 0.1s linear;
+//      -o-transition: background-position 0.1s linear;
+//      transition: background-position 0.1s linear;
+    }
+
+    .btn:focus {
+      outline: thin dotted #333;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: -2px;
+    }
+
+    .btn.active,
+    .btn:active {
+      background-image: none;
+      outline: 0;
+      -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+      -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    }
+
+    .btn.disabled,
+    .btn[disabled] {
+      cursor: default;
+      background-image: none;
+      opacity: 0.65;
+      filter: alpha(opacity=65);
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+
+
+
+    i {
+      opacity: 0.5;
+    }
+
+  }
+
+
+}
+
+
+
+
+
+
+#main {
+  min-width: 900px;
+}
+
+
 #content {
+
     background: #F8F9FA;
     background-image: none;
 
@@ -84,19 +292,38 @@ body {
   padding-left: 0;
 
   &.gray-background {
+
     background: #F8F9FA;
     padding-left: none;
   }
 
   .main-menu-span {
+
     margin-top: 30px;
+    //min-width: 200px;
   }
 
 }
 
 
 
+#dashboard_alert {
 
+  span {
+    font-size: 16px;
+
+    a {
+      color: #fff;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+    }
+
+  }
+
+}
 
 
 
@@ -163,9 +390,23 @@ body {
 }
 
 
+div.uploader {
+  height: 50px;
+  width: 300px;
+
+
+
+
+}
+
+
+
+
+
 
 
 #top_nav {
+  min-width: 900px;
   margin-top: 75px;
   margin-left: 20px;
   margin-bottom: 0;
@@ -289,7 +530,7 @@ body {
 
       border: none;
 
-      background: url("../img/athlon/overlay_arrow.png") center center no-repeat;
+      background: url("../img/athlon/overlay_arrow.png") #363636 center center no-repeat;
       //.no_opacity();
 
 
@@ -312,7 +553,37 @@ body {
 }
 
 
+// prevent pointer from appearing when hovering over label
+.control-group {
+  label {
+    &:hover {
+      cursor: text;
+    }
+  }
+}
 
+// position elements for choosing logo and header images
+.control-group:nth-child(2) {
+
+  label {
+    margin-left: 40px;
+
+  }
+
+  #logo_link {
+    margin-top: 5px;
+    margin-left: 40px;
+    height: 30px;
+  }
+
+  #header_link {
+    margin-top: 5px;
+    margin-left: 40px;
+    height: 30px;
+  }
+
+
+}
 
 
 

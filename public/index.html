@@ -52,7 +52,7 @@
 
 
     <!-- start: Header -->
-        <div class="navbar">
+        <div id="athlon_header" class="navbar">
         <div class="navbar-inner">
         <div class="container-fluid">
         <a class="btn btn-navbar" data-toggle="collapse" data-target=".top-nav.nav-collapse,.sidebar-nav.nav-collapse">
@@ -61,15 +61,39 @@
             <span class="icon-bar"></span>
             <span class="notification red">No menu yet</span>
         </a>
+
+
+        <div id="game_list" class="clearfix">
+            <ul>
+                <li><a href="#">Another Game</a></li>
+                <li><a href="#">Another Game</a></li>
+                <li><a href="#">Another Game</a></li>
+                <li><a href="#">Another Game</a></li>
+            </ul>
+        </div>
+
         <a class="brand" href="index.html"> <img alt="Athlon Sports Administration" src="img/athlon/athlon_logo_header.png" /></a>
 
-        <div style="float: right;">
+
+
+
+        <div id="game_selector" >
+            <img src="img/athlon/basketball.png" />
+            <span>2013 Bracket Breakdown</span>
+        </div>
+
+
+
+
+
+
+        <div id="login_container">
             <a href="#" class="btn">
-                <i class="icon-user"></i>
+                <i class="icon-user icon-white"></i>
                 Logged in as Dave Gates
             </a>
             <a href="#" class="btn">
-                <i class="icon-off"></i>
+                <i class="icon-off icon-white"></i>
                 Log Off
             </a>
         </div>
@@ -116,7 +140,7 @@
 
     </div>
 
-    <div class="container-fluid gray-background">
+    <div id="main" class="container-fluid gray-background">
         <div class="row-fluid ">
 
             <!-- start: Main Menu -->
@@ -202,6 +226,11 @@
         </noscript>
 
         <div id="content" class="span9">
+
+        <div id="dashboard_alert" class="alert alert-info">
+            <span>REIMPORT YOUR 2012 GAME DESIGN & LOGOS -- <a>Click here to import</a></span>
+        </div>
+
             <!-- start: Content -->
 
             <div>
@@ -256,6 +285,7 @@
                                                 <div class="container-fluid">
                                                     <div class="row-fluid">
                                                         <div class="layout_box span4">
+
                                                             <div class="layout_box_heading">
                                                                 <h3>Layout One</h3>
                                                             </div>
@@ -385,13 +415,13 @@
 
                                                 <form class="">
                                                     <fieldset>
-                                                        <div class="span5 control-group pull-left">
+                                                        <div class=" control-group pull-left">
                                                             <label class="control-label">Replace Logo</label>
                                                             <div class="controls">
                                                                 <input type="file">
                                                             </div>
                                                         </div>
-                                                        <div class="span5 control-group ">
+                                                        <div class=" control-group pull-left ">
                                                             <label class="control-label" for="logo_link">Logo Link (optional) </label>
                                                             <div class="controls">
                                                                 <input type="text" id="logo_link">
@@ -430,13 +460,13 @@
 
                                                     <form class="">
                                                         <fieldset>
-                                                            <div class="span5 control-group pull-left">
+                                                            <div class="control-group pull-left">
                                                                 <label class="control-label">Replace Logo</label>
                                                                 <div class="controls">
                                                                     <input type="file">
                                                                 </div>
                                                             </div>
-                                                            <div class="span5 control-group ">
+                                                            <div class="control-group pull-left ">
                                                                 <label class="control-label" for="header_link">Logo Link (optional) </label>
                                                                 <div class="controls">
                                                                     <input type="text" id="header_link">
@@ -573,6 +603,7 @@
         <script src="js/less.js"></script>
 
         <script src="js/theme_selector.js"></script>
+        <script src="js/game_selector.js"></script>
 
 
         <script type="text/javascript">

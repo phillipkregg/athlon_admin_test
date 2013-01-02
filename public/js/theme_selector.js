@@ -3,7 +3,8 @@ $(document).ready(function() {
 
     var thumbnails = $('.thumbnail');
 
-    $(".btn-primary").bind('click', function() {
+    $(".layout_box .btn-primary").bind('click', function() {
+
         var imageContainer = $(this).parent().siblings('div.thumbnail');
 
         imageContainer.removeClass('thumbnail').addClass('thumbnail_overlay');
